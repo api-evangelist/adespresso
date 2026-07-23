@@ -1,19 +1,49 @@
 aid: adespresso
 name: AdEspresso
-description: AdEspresso is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AdEspresso by Hootsuite is a self-service digital advertising optimization
+  platform for creating, managing, analyzing, and collaborating on Facebook and
+  Instagram (and Google) ad campaigns from a single dashboard. Its tagline is
+  "Digital Advertising Made Easy, Fast & Effective." The product lets marketers,
+  agencies, and e-commerce teams launch split-test campaigns at scale, generate
+  performance analytics in web/PDF/email/Excel formats, run team and client
+  approval workflows, and learn through AdEspresso University guides, webinars,
+  and eBooks. Originally a standalone Facebook Marketing Partner, AdEspresso was
+  acquired by Hootsuite in 2017. It is surfaced here as a portfolio company of
+  500 Global. AdEspresso does not publish a public developer API, OpenAPI
+  definition, SDKs, or a developer portal; it builds on the Facebook Marketing
+  API rather than exposing its own.
 url: https://raw.githubusercontent.com/api-evangelist/adespresso/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-no-public-api
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://adespresso.com/wp-content/uploads/2018/09/final-graphics-fb-share-img.png
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Advertising
+- Facebook Ads
+- Instagram Ads
+- Social Media Marketing
+- Ad Optimization
+- SaaS
+- Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,26 @@ maintainers:
 common:
 - type: Website
   url: https://adespresso.com
+- type: Pricing
+  url: https://adespresso.com/pricing/
+- type: Blog
+  url: https://adespresso.com/blog/
+- type: Support
+  url: https://support.adespresso.com/hc/en-us
+- type: SignUp
+  url: https://adespresso.com/join/
+- type: Login
+  url: https://app.adespresso.com/login
+- type: TermsOfService
+  url: https://adespresso.com/tos/
+- type: PrivacyPolicy
+  url: https://adespresso.com/privacy/
+- type: GitHubOrganization
+  url: https://github.com/adespresso
+- type: DomainSecurity
+  url: security/adespresso-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
