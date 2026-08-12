@@ -10,9 +10,12 @@ description: >-
   approval workflows, and learn through AdEspresso University guides, webinars,
   and eBooks. Originally a standalone Facebook Marketing Partner, AdEspresso was
   acquired by Hootsuite in 2017. It is surfaced here as a portfolio company of
-  500 Global. AdEspresso does not publish a public developer API, OpenAPI
-  definition, SDKs, or a developer portal; it builds on the Facebook Marketing
-  API rather than exposing its own.
+  500 Global. AdEspresso publishes no developer portal, API reference, OpenAPI or
+  AsyncAPI definition, GraphQL endpoint, Postman collection, MCP server or SDK on
+  any public host; it builds on Facebook's Marketing API rather than exposing one
+  of its own. Its only public statement about an API is a single line item on the
+  pricing page, where "API access" is listed as an Enterprise-tier ($259/month
+  and up) entitlement with no contract, base URL or documentation attached.
 url: https://raw.githubusercontent.com/api-evangelist/adespresso/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -34,7 +37,7 @@ accessModel:
 image: https://adespresso.com/wp-content/uploads/2018/09/final-graphics-fb-share-img.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-08-12'
 tags:
 - Company
 - Advertising
@@ -58,7 +61,7 @@ common:
 - type: Blog
   url: https://adespresso.com/blog/
 - type: Support
-  url: https://support.adespresso.com/hc/en-us
+  url: https://support.adespresso.com/s/
 - type: SignUp
   url: https://adespresso.com/join/
 - type: Login
@@ -71,8 +74,34 @@ common:
   url: https://github.com/adespresso
 - type: DomainSecurity
   url: security/adespresso-domain-security.yml
+- type: Plans
+  url: plans/adespresso-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/adespresso-rate-limits.yml
+- type: Packages
+  url: packages/adespresso-packages.yml
+- type: WellKnown
+  url: well-known/adespresso-well-known.yml
+- type: LLMsTxt
+  url: llms/adespresso-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 6
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    AdEspresso's pricing page sells "API access" as an Enterprise-tier ($259/month)
+    entitlement, but no reference, base URL or specification for it exists on any
+    public host — the Help Centre that would carry it, support.adespresso.com, runs
+    on Salesforce Experience Cloud and returns 401 to an anonymous visitor.
+  evidence:
+  - url: https://adespresso.com/pricing/
+    status: 200
+  - url: https://support.adespresso.com/hc/en-us
+    status: 401
+  - url: https://app.adespresso.com/api/v1
+    status: 404
+  checked: '2026-08-12'

@@ -1,0 +1,175 @@
+generated: '2026-08-12'
+method: probed
+source: live GET probes of /.well-known/* on every adespresso.com host
+note: >-
+  adespresso.com is a WordPress site whose 404 handler answers HTTP 200 with a
+  ~54.5 KB HTML page titled "Oops Something went wrong, you found a 404"
+  (meta robots noindex). Every /.well-known/* path on that host therefore returns
+  200 with an HTML shell — a SOFT 404, recorded here as a miss, not a hit.
+  The only real document found on the estate is the OpenID Connect discovery
+  document served by support.adespresso.com, which is AdEspresso's help centre
+  running on Salesforce Experience Cloud (issuer https://support.adespresso.com,
+  Salesforce-flavoured scopes: lightning, visualforce, pardot_api, wave_api,
+  cdp_api, einstein_gpt_api). It is the login surface for the help centre, NOT a
+  contract for an AdEspresso product API — AdEspresso publishes no developer API.
+hosts:
+- host: adespresso.com
+  soft_404: true
+  soft_404_evidence: 'HTTP 200, Content-Type text/html, ~54,530 bytes, <title>Oops Something went wrong, you found a 404</title>, meta robots noindex'
+  paths:
+  - path: /.well-known/security.txt
+    url: https://adespresso.com/.well-known/security.txt
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not a document
+    file: null
+  - path: /.well-known/openid-configuration
+    url: https://adespresso.com/.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not a document
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    url: https://adespresso.com/.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not a document
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    url: https://adespresso.com/.well-known/oauth-protected-resource
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not a document
+    file: null
+  - path: /.well-known/api-catalog
+    url: https://adespresso.com/.well-known/api-catalog
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not a document
+    file: null
+  - path: /.well-known/ai-plugin.json
+    url: https://adespresso.com/.well-known/ai-plugin.json
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not a document
+    file: null
+  - path: /.well-known/agent-card.json
+    url: https://adespresso.com/.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not an AgentCard
+    file: null
+  - path: /.well-known/agent.json
+    url: https://adespresso.com/.well-known/agent.json
+    status: 200
+    content_type: text/html
+    result: miss
+    reason: soft-404 HTML shell, not an AgentCard
+    file: null
+- host: app.adespresso.com
+  soft_404: false
+  paths:
+  - path: /.well-known/security.txt
+    url: https://app.adespresso.com/.well-known/security.txt
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/openid-configuration
+    url: https://app.adespresso.com/.well-known/openid-configuration
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    url: https://app.adespresso.com/.well-known/oauth-authorization-server
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    url: https://app.adespresso.com/.well-known/oauth-protected-resource
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/api-catalog
+    url: https://app.adespresso.com/.well-known/api-catalog
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/ai-plugin.json
+    url: https://app.adespresso.com/.well-known/ai-plugin.json
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/agent-card.json
+    url: https://app.adespresso.com/.well-known/agent-card.json
+    status: 404
+    result: miss
+    file: null
+  - path: /.well-known/agent.json
+    url: https://app.adespresso.com/.well-known/agent.json
+    status: 404
+    result: miss
+    file: null
+- host: support.adespresso.com
+  soft_404: false
+  platform: Salesforce Experience Cloud (help centre)
+  paths:
+  - path: /.well-known/openid-configuration
+    url: https://support.adespresso.com/.well-known/openid-configuration
+    status: 200
+    content_type: application/json
+    bytes: 2484
+    result: hit
+    file: adespresso-support-openid-configuration.json
+    issuer: https://support.adespresso.com
+    note: >-
+      Real OIDC discovery document, saved verbatim. Salesforce Experience Cloud
+      identity endpoints for the AdEspresso Help Centre login. Not an API contract.
+  - path: /.well-known/security.txt
+    url: https://support.adespresso.com/.well-known/security.txt
+    status: 401
+    result: miss
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    url: https://support.adespresso.com/.well-known/oauth-authorization-server
+    status: 401
+    result: miss
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    url: https://support.adespresso.com/.well-known/oauth-protected-resource
+    status: 401
+    result: miss
+    file: null
+  - path: /.well-known/api-catalog
+    url: https://support.adespresso.com/.well-known/api-catalog
+    status: 401
+    result: miss
+    file: null
+  - path: /.well-known/ai-plugin.json
+    url: https://support.adespresso.com/.well-known/ai-plugin.json
+    status: 401
+    result: miss
+    file: null
+  - path: /.well-known/agent-card.json
+    url: https://support.adespresso.com/.well-known/agent-card.json
+    status: 401
+    result: miss
+    file: null
+  - path: /.well-known/agent.json
+    url: https://support.adespresso.com/.well-known/agent.json
+    status: 401
+    result: miss
+    file: null
+summary:
+  hosts_probed: 3
+  paths_probed: 25
+  real_documents: 1
+  security_txt: false
+  agent_card: false
+  api_catalog: false

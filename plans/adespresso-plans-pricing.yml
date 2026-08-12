@@ -1,0 +1,86 @@
+generated: '2026-08-12'
+method: searched
+source: https://adespresso.com/pricing/
+fetched: '2026-08-12'
+http_status: 200
+currency: USD
+billing_period: month
+trial:
+  available: true
+  length_days: 14
+  card_required: unknown
+  note: Every tier advertises a "Free 14-Day Trial".
+note: >-
+  Product-plan pricing for the AdEspresso SaaS, read verbatim from the public
+  pricing page. Of direct relevance to this catalog: "API access" is listed as an
+  ENTERPRISE-TIER feature only. AdEspresso publishes no developer portal,
+  reference, or machine-readable contract for that API anywhere on its public
+  surface — the entitlement is named on the pricing page and nowhere else.
+plan_count: 3
+plans:
+- name: Starter
+  price: 49
+  currency: USD
+  billing_period: month
+  quota:
+    ad_spend_limit_usd_month: 1000
+  features:
+  - Unlimited ad accounts
+  - Facebook and Instagram campaigns
+  - Essential features
+  - Free 14-day trial
+  api_access: false
+- name: Plus
+  price: 99
+  currency: USD
+  billing_period: month
+  quota:
+    ad_spend_limit_usd_month: null
+    ad_spend_note: Manage unlimited ad spend
+  seats: 15
+  features:
+  - Everything in Starter
+  - Cross-campaign customized performance triggers
+  - Facebook and Instagram multi-page bulk creation
+  - Campaign approval
+  - Onboarding management
+  - Up to 15 seats for your team
+  - Optional view-only access for team members and clients
+  - White label for reports and collaboration tools
+  api_access: false
+- name: Enterprise
+  price: 259
+  price_qualifier: starting from
+  currency: USD
+  billing_period: month
+  quota:
+    ad_spend_limit_usd_month: null
+    ad_spend_note: Manage unlimited ad spend
+  seats: unlimited
+  features:
+  - Everything in Plus
+  - Dedicated Facebook Marketing Consultant
+  - From 1 hour of live training and strategy planning per month
+  - Unlimited seats
+  - Mandatory campaign approval
+  - API access
+  - Salesforce contacts sync
+  api_access: true
+  api_access_note: >-
+    The only public statement AdEspresso makes about having an API. No base URL,
+    reference, authentication model, or specification is published; obtaining it
+    requires an Enterprise subscription.
+included_in_all_plans:
+- Import of existing campaigns
+- Automated promotion of Facebook posts
+- Inspector breakdown and split-testing analysis
+- Automatic contacts sync for lead campaigns
+- Tag-based aggregated reporting
+- Schedulable reporting tool
+- Customized performance triggers
+- Automatic optimization
+overage:
+  documented: false
+  note: >-
+    No overage schedule is published. The Starter tier states a $1,000/month
+    managed-ad-spend ceiling; the page does not say what happens past it.

@@ -1,0 +1,132 @@
+generated: '2026-08-12'
+method: searched
+source: >-
+  https://packagist.org/search.json?q=adespresso + https://repo.packagist.org/p2/adespresso/<pkg>.json
+  + https://github.com/adespresso (25 public repos, read via the GitHub REST API)
+note: >-
+  IMPORTANT — none of these is a client library for an AdEspresso API. AdEspresso
+  publishes no public API, so there is no SDK surface to catalogue. What the
+  company does publish are eight first-party PHP/Symfony Composer packages: two
+  internal Symfony bundles (feature flagging, white-labelling) and six OAuth
+  client providers for OTHER vendors' APIs (Mailchimp, HubSpot, Intercom,
+  Infusionsoft, GetResponse, AWeber) that AdEspresso built for its own
+  integrations and open-sourced. They are recorded here because they are real,
+  registry-published, first-party artifacts — but deliberately WITHOUT a
+  `type: SDKs` pointer in apis.yml, because crediting them as API SDKs would
+  assert an API AdEspresso does not ship.
+  Registries checked with no first-party result: npm (0 hits), PyPI (404),
+  RubyGems (404), NuGet (0), Maven Central (0), crates.io (403 to anonymous
+  probe — no adespresso crate is known), pkg.go.dev.
+registries_checked:
+- registry: packagist
+  result: 8 first-party packages
+- registry: npm
+  result: none
+- registry: pypi
+  result: none
+- registry: rubygems
+  result: none
+- registry: nuget
+  result: none
+- registry: maven-central
+  result: none
+sdk_count: 0
+package_count: 8
+packages:
+- name: adespresso/feature-bundle
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/feature-bundle
+  repository: https://github.com/adespresso/FeatureBundle
+  license: Apache-2.0
+  version: 2.3.0
+  published: '2019-09-02'
+  is_api_client: false
+  description: Symfony bundle to manage the release of new features (feature flagging).
+- name: adespresso/white-label-bundle
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/white-label-bundle
+  repository: https://github.com/adespresso/WhiteLabelBundle
+  license: Apache-2.0
+  version: 2.1.0
+  published: '2019-09-06'
+  is_api_client: false
+  description: Symfony bundle to release a white-label version of an application or website.
+- name: adespresso/oauth2-mailchimp
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/oauth2-mailchimp
+  repository: https://github.com/adespresso/oauth2-mailchimp
+  license: MIT
+  version: v0.1
+  published: '2018-05-02'
+  is_api_client: false
+  description: Mailchimp OAuth 2.0 client provider for PHP League OAuth2 — a client for Mailchimp, not for AdEspresso.
+- name: adespresso/oauth2-hubspot
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/oauth2-hubspot
+  repository: https://github.com/adespresso/oauth2-hubspot
+  license: MIT
+  version: v0.1
+  published: '2018-05-08'
+  is_api_client: false
+  description: HubSpot OAuth 2 client provider for PHP League OAuth2-Client.
+- name: adespresso/oauth2-infusionsoft
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/oauth2-infusionsoft
+  repository: https://github.com/adespresso/oauth2-infusionsoft
+  license: MIT
+  version: v0.1.1
+  published: '2018-05-11'
+  is_api_client: false
+  description: Infusionsoft OAuth 2 client provider for PHP League OAuth2-Client.
+- name: adespresso/oauth2-intercom
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/oauth2-intercom
+  repository: https://github.com/adespresso/oauth2-intercom
+  license: MIT
+  version: 0.0.1
+  published: '2018-06-12'
+  is_api_client: false
+  description: Intercom OAuth 2.0 client provider for PHP League OAuth2.
+- name: adespresso/oauth1-aweber
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/oauth1-aweber
+  repository: https://github.com/adespresso/oauth1-aweber
+  license: MIT
+  version: '0.1'
+  published: '2018-06-14'
+  is_api_client: false
+  description: AWeber OAuth 1 client provider for PHP League OAuth1-Client.
+- name: adespresso/oauth2-getresponse
+  language: php
+  registry: packagist
+  official: true
+  url: https://packagist.org/packages/adespresso/oauth2-getresponse
+  repository: https://github.com/adespresso/oauth2-getresponse
+  license: MIT
+  version: v0.1
+  published: '2018-07-04'
+  is_api_client: false
+  description: GetResponse OAuth 2 client provider for PHP League OAuth2-Client.
+decay:
+  newest_release: '2019-09-06'
+  oldest_release: '2018-05-02'
+  years_since_newest_release: 6
+  finding: >-
+    Every first-party package AdEspresso publishes was last released in 2018 or
+    2019. The GitHub org's remaining 17 public repos are forks of third-party
+    libraries (bootstrap, backbone, react-intl, ProxyManager) last touched in
+    2019. The open-source surface has been dormant for six years.

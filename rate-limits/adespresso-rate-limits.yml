@@ -1,0 +1,37 @@
+generated: '2026-08-12'
+method: searched
+source: https://adespresso.com/pricing/
+limit_count: 0
+note: >-
+  AdEspresso publishes no API rate limits, because it publishes no API reference.
+  Searched for a developer portal, API reference or limits page across
+  adespresso.com (WordPress soft-404s every unknown path with HTTP 200),
+  app.adespresso.com (hard 404s), and support.adespresso.com (Salesforce
+  Experience Cloud help centre; /hc/en-us returns 401). "API access" appears once
+  on the public estate — as an Enterprise-tier line item on the pricing page — with
+  no quotas, windows, burst allowances, response headers, or exhaustion status
+  code attached. Recorded as an honest zero, not an omission.
+  The nearest thing to a published limit is a PRODUCT quota, not an API one:
+  the Starter plan caps managed ad spend at $1,000/month (see
+  plans/adespresso-plans-pricing.yml).
+limits: []
+headers:
+  documented: false
+  observed: []
+  note: >-
+    No X-RateLimit-*, RateLimit-* or Retry-After signalling could be observed —
+    there is no unauthenticated API endpoint on any adespresso.com host to observe.
+exhaustion_status: null
+probes:
+- url: https://adespresso.com/developers/
+  status: 200
+  result: soft-404 (WordPress 404 page served with HTTP 200, meta robots noindex)
+- url: https://adespresso.com/api/
+  status: 200
+  result: soft-404
+- url: https://app.adespresso.com/api/v1
+  status: 404
+  result: miss
+- url: https://support.adespresso.com/hc/en-us
+  status: 401
+  result: help centre requires authentication
