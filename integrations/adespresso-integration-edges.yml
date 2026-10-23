@@ -27,6 +27,99 @@ edges:
     year: '2013'
   detected_by: sweep-accelerator-portfolios.py
   first_seen: '2026-10-21'
+- partner_name: Packagist
+  partner: packagist
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (PHP)
+  evidence: https://packagist.org/packages/adespresso/feature-bundle
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Packagist (public registry JSON)
+    spec_file: null
+    language: PHP
+    packages:
+    - name: adespresso/feature-bundle
+      version: 2.3.0
+      released: '2019-09-02'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/feature-bundle
+      repo_leg: github-org:adespresso
+      publisher_leg: email:adespresso.com
+      matched_by: domain
+    - name: adespresso/oauth1-aweber
+      version: '0.1'
+      released: '2018-06-14'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/oauth1-aweber
+      repo_leg: github-org:adespresso
+      publisher_leg: org:adespresso
+      matched_by: github-org
+    - name: adespresso/oauth2-getresponse
+      version: v0.1
+      released: '2018-07-04'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/oauth2-getresponse
+      repo_leg: github-org:adespresso
+      publisher_leg: org:adespresso
+      matched_by: github-org
+    - name: adespresso/oauth2-hubspot
+      version: v0.1
+      released: '2018-05-08'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/oauth2-hubspot
+      repo_leg: github-org:adespresso
+      publisher_leg: org:adespresso
+      matched_by: github-org
+    - name: adespresso/oauth2-infusionsoft
+      version: v0.1.1
+      released: '2018-05-11'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/oauth2-infusionsoft
+      repo_leg: github-org:adespresso
+      publisher_leg: org:adespresso
+      matched_by: github-org
+    - name: adespresso/oauth2-intercom
+      version: 0.0.1
+      released: '2018-06-12'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/oauth2-intercom
+      repo_leg: github-org:adespresso
+      publisher_leg: email:adespresso.com
+      matched_by: domain
+    - name: adespresso/oauth2-mailchimp
+      version: v0.1
+      released: '2018-05-02'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/oauth2-mailchimp
+      repo_leg: github-org:adespresso
+      publisher_leg: email:adespresso.com
+      matched_by: domain
+    - name: adespresso/white-label-bundle
+      version: 2.1.0
+      released: '2019-09-06'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/adespresso/white-label-bundle
+      repo_leg: github-org:adespresso
+      publisher_leg: email:adespresso.com
+      matched_by: domain
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-php-dart-elixir-package-registries.py
+    detected: '2026-10-22'
+  detected_by: sweep-php-dart-elixir-package-registries.py
+  first_seen: '2026-10-22'
 generated: '2026-10-21'
 method: searched
 source:
@@ -41,3 +134,6 @@ checked:
 - https://www.antler.co/portfolio
 - https://www.techstars.com/portfolio
 - https://www.ycombinator.com/companies
+- https://hex.pm/api
+- https://packagist.org/packages
+- https://pub.dev/api
