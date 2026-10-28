@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AdEspresso is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+AdEspresso by Hootsuite is a self-service digital advertising optimization platform for creating, managing, analyzing, and collaborating on Facebook and Instagram (and Google) ad campaigns from a single dashboard. Its tagline is "Digital Advertising Made Easy, Fast & Effective." The product lets marketers, agencies, and e-commerce teams launch split-test campaigns at scale, generate performance analytics in web/PDF/email/Excel formats, run team and client approval workflows, and learn through AdEspresso University guides, webinars, and eBooks. Originally a standalone Facebook Marketing Partner, AdEspresso was acquired by Hootsuite in 2017. It is surfaced here as a portfolio company of 500 Global. AdEspresso publishes no developer portal, API reference, OpenAPI or AsyncAPI definition, GraphQL endpoint, Postman collection, MCP server or SDK on any public host; it builds on Facebook's Marketing API rather than exposing one of its own. Its only public statement about an API is a single line item on the pricing page, where "API access" is listed as an Enterprise-tier ($259/month and up) entitlement with no contract, base URL or documentation attached.
 
-Backed by: 500-global — https://adespresso.com
+**Areas:** Company · Advertising · Facebook Ads · Instagram Ads · Social Media Marketing · Ad Optimization · Software-as-a-Service · Marketing
+
+## AdEspresso on APIs.io
+
+Everything profiled for AdEspresso is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/adespresso/](https://apis.io/providers/adespresso/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Adespresso Domain Security](https://apis.io/security/adespresso/adespresso-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Adespresso Plans Pricing](https://apis.io/plans/adespresso/adespresso-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Adespresso Rate Limits](https://apis.io/rate-limits/adespresso/adespresso-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://adespresso.com)
+- [Pricing](https://adespresso.com/pricing/)
+- [Sign up](https://adespresso.com/join/)
+- [Support](https://support.adespresso.com/s/)
+- [Blog](https://adespresso.com/blog/)
+- [Terms of service](https://adespresso.com/tos/)
+- [Privacy policy](https://adespresso.com/privacy/)
+- [GitHub](https://github.com/adespresso)
+
+## API Evangelist rating
+
+**Kin Score 22.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 76.3 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/adespresso/](https://apis.io/providers/adespresso/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AdEspresso: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/adespresso/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
